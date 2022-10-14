@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+</head>
+<body>
+    <strong>My Name :</strong> Dhanesh Basavraj Awati
+    <br><br>
+    <strong>My Email :</strong> dawati66@gmail.com
+    <br><br>
+    <strong>My contact no. :</strong> +91-8412844396
+    <br><br>
+    <strong>My LinkedIn :</strong> Dhanesh Awati
+    <br><br>
+    <strong>My GitHub :</strong> dhaneshawati
+    <br><br>
+    <hr noshade size="2">
+    <p>
+        <strong>Note:</strong> If you have any query please feel free to fill below form.
+    </p>
+    <br>
+    <form action="mailto:dawati66@gmail.com" method="post" enctype="text/plain">
+        <label for="name">*Your Full Name:</label>
+        <input type="text" name="Name" id="name" minlength="3" maxlength="20" required>
+        <br><br>
+
+        <label for="email">*Your e-mail id:</label>
+        <input type="email" name="email" id="email" placeholder="abc@xyz.com" pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}$" required>
+        <br><br>
+
+        <label for="Profession">*Your Profession:</label>
+        <select name="profession" id="Profession" required>
+            <option value="recruiter">Recruiter</option>
+            <option value="student">Student</option>
+            <option value="entrepreneur">Entrepreneur</option>
+        </select>
+        <br><br>
+
+        <label for="Query">Query:</label>
+        <br><br>
+        <textarea name="Query" id="Query" cols="50" rows="20" placeholder="Please type in your query here"></textarea>
+        <br><br>
+
+        <label for="file">choose your file if any:</label>
+        <input type="file" name="File" id="file" accept=".png,.jpg,.pdf,.doc,.docx,.text,.xls">
+        <br><br>
+
+        <input type="submit" name="submit" id="Submit">
+    </form>
+</body>
+</html>
