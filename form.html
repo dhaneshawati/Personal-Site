@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Types of inputs in forms:</h1>
+    <br>
+    <hr>
+    <br>
+    <form action="mailto:dawati66@gmail.com" method="post" enctype="text/plain">
+        <label for="name">*Name:</label>
+        <input type="text" name="Name" id="name" minlength="3" maxlength="8" size="10" required>
+        <!-- label's for and input's id if maching, if we click on lebel, field gets activated -->
+
+        <br>
+        <input type="radio" name="Response for q1" id="mcq" value="100">
+        <label for="mcq">1</label><br>
+        <input type="radio" name="Response for q1" id="mcq2">
+        <label for="mcq2">2</label><br>
+        <input type="radio" name="Response for q1" id="mcq3">
+        <label for="mcq3">3</label><br>
+        <input type="radio" name="Response for q1" id="mcq4">
+        <label for="mcq4">4</label><br>
+        <!-- If name of diff input radios are same then it shows unique option selection -->
+        <br>
+        <label for="email">*E-mail:</label>
+        <input type="email" required placeholder="abc@xyz.com" id="email" name="EMAIL" pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}$">
+        <br>                                                                                    
+        <p>A form with an email field that that must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a ".". After the "." sign, add at least 2 letters from a to z:</p>
+        <br><br>
+        <label for="password">*Password</label>
+        <input type="password" name="Password" id="password" pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%&*?])[A-Za-z\d!@#$%&*?]{8,}$" required>
+        <br>
+        <p>Password must contain atleast one Uppercase letter, one lowercase letter, one number and one special character in password</p>
+        <p>Password length must be greater than 8 characters</p>
+        <br><br>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" name="dob" id="DOB">
+        <br><br>
+        <label for="range">Mark Range</label>
+        <input type="range" id="range" name="Range of Marks" min="0" max="100" value="20" title="Marks" step="10">
+        <br><br>
+        <input type="checkbox" id="TnC" name="terms" required>
+        <label for="TnC">*I have read and understood all the terms and conditions of the company</label>
+        <br>
+        <input type="checkbox" id="Declare" name="Declaration" required>
+        <label for="Declare">*Information given above is correct. If it found false, I am agree to fact that company can take any actions against me.  </label>
+        <br><br>
+        <p><label for="opinion">Your Opinion:</label></p>
+        <textarea name="Feedback" id="opinion" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <label for="Colleges">Choose your college:</label>
+        <select name="College" id="Colleges">
+            <optgroup label="Pune">
+                <option >Select from dropdown</option>
+                <option value="COEP">College of Engineering Pune</option>
+                <option value="MIT">MIT</option>
+                <option value="PVG">Pune vidyarthi gruha</option>
+                <option value="AISSMS">AISSMS</option>
+                <option value="Bharati">Bharati Vidyapith</option>
+                <option value="Sinhagad">Sinhgad Institute</option>
+            </optgroup>
+            <optgroup label="Sangli">
+                <option value="WCE">Walchand College of Engineering Sangli</option>
+                <option value="RIT">Rajarambapu Institute of Technology</option>
+                <option value="PVPIT">Vasantdada Patil Institute of Technology</option>
+                <option value="Dange">Anna Dange</option>
+                <option value="JJ">J J Magdum college of engineering</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        <label for="File">*choose your Resume</label>
+        <input type="file" name="Resume" id="File" accept=".pdf" required>
+
+        <br><br>
+        <input type="Submit" value="Submit">
+        <input type="Reset" value="Reset">
+    </form>
+</body>
+</html>
